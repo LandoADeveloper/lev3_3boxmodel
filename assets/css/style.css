@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url("../fonts/Cinzel/Cinzel-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins/Poppins-Light.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* =====HEADER==== */
+header {
+    font-family: 'Cinzel',serif;
+}
+header p.logo {
+    margin: 2vh 5vw;
+    text-transform: uppercase;
+    color: #999;
+}
+header section {
+    height: 75vh;
+    background-image: url("https://images.unsplash.com/photo-1486312699619-be057cfc0342?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+
+    display: flex;
+    align-items: center;
+}
+
+header section p.headerDescr {
+    color: #fff;
+    font-size: 3rem;
+    width: 20vw;
+    margin: auto auto;
+}
+
+main {
+    margin: 20vh auto;
+    width: 75vw;
+}
+main p {
+    font-family: 'Poppins';
+}
+main h2 {
+    font-family: 'Cinzel';
+}
+main section {
+    margin-top: 10vh;
+}
+
+main section.introduction {
+    text-align: center;
+}
+main section.introduction  h2{
+    margin-bottom: 10vh;
+}
+
+main section.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+main section.gallery img{
+    margin-top: 5vh;
+    width: 300px;
+}
+
+main section.tours h2{
+    margin: 5vh auto;
+    width: fit-content;
+}
+main section.tours ul{
+    margin-bottom: 10vh;
+    
+}
+
+main section.tours ul li {
+    margin-top: 5vh;
+    list-style: none;
+}
+
+main section.contactSection {
+    text-align: center;
+}
+main section.contactSection a{
+    text-decoration: none;
+    color: #999;
+}
+
+main section.tours p.soldOut::after{
+    content: " - SOLD OUT";
+    color: red;
+}
+main section.tours p.availiable::after{
+    content: " - AVAILIABLE";
+    color: green;
+}
+main section.tours p.fleft::after{
+    content: " - ONLY 4 SPOTS AVAILIABLE";
+    color: green;
+}
